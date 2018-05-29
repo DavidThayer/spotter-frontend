@@ -1,5 +1,96 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+/* pricing css */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/* End of pricing css */
+
+/* Begin jumbotron css */
+h1 {
+  color: #ffffff !important;
+  font-weight: 44px !important;
+  text-shadow: 1px 1px 40px rgba(22, 23, 31, 0.4) !important;
+  line-height: 1.1;
+  text-rendering: optimizelegibility;
+}
+
+.jumbotron {
+  padding: 15% 10% 10% 10%;
+}
+
+.hero-input {
+  margin-top: 1.3rem;
+}
+
+.hero-form {
+  font-size: 19px !important;
+  line-height: 24px !important;
+  color: #484848;
+  -moz-osx-font-smoothing: grayscale;
+  border: 0px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  display: inline !important;
+  height: 48px !important;
+  text-align: left !important;
+  padding: 7px 8px !important;
+  position: relative !important;
+  width: 75% !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  outline: none !important;
+}
+
+.hero-button {
+  font-size: 19px !important;
+  line-height: 24px !important;
+  height: 48px !important;
+  border-radius: 4px !important;
+  padding: 7px 8px !important;
+}
+.hero-container {
+  /* z-index: 1 !important; */
+  /* position: relative !important; */
+  height: 300px !important;
+  top: 50% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+.main-image {
+  background-image: url("model-s-lg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* End jumbotron css */

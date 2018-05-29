@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import logo from './logo.svg';
-import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home'
+import PostsContainer from './containers/PostsContainer'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <h1>Hello Spotter</h1>
+          <Switch>
+            <Route exact path='/' component={ Home }/>
+            <Route path='/deals' component={ PostsContainer }/>
+        </Switch>
       </div>
     );
   }
