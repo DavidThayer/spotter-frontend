@@ -86,7 +86,7 @@ h1 {
   margin: 0 auto !important;
 }
 .main-image {
-  background-image: url("model-s-lg.jpg");
+  background-image: url("./img/model-s-lg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import '../index.css'
 
 class Header extends Component{
   render(){
@@ -10,7 +11,7 @@ class Header extends Component{
             <nav className="my-2 my-md-0 mr-md-3">
                 <Link to={'/deals'} className="p-2 text-dark">Top Deals</Link>
             </nav>
-            <a className="btn btn-outline-primary" href="#">Sign up</a>
+            <Link className="btn btn-outline-primary" to={'/'}>Sign up</Link>
         </div>
 
       </header>
