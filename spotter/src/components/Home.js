@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../index.css'
-import PostsContainer from '../containers/PostsContainer';
+// import PostsContainer from '../containers/PostsContainer';
 import SearchBar from './SearchBar';
+import HomeDealsContainer from '../containers/HomeDealContainer';
 
 class Home extends Component {
   render() {
@@ -20,7 +21,7 @@ class Home extends Component {
         </div>
         
         <div className="container">
-        <PostsContainer />
+        <HomeDealsContainer />
         </div>
         <div className="jumbotron jumbotron-fluid">
             <p className="lead">This is where we'll explain how things work with three snazzy icons and text.</p>

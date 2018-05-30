@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Header from '../components/Header'
 
-class PostsContainer extends Component {
+class HomeDealsContainer extends Component {
 
   state = {
     posts: null,
@@ -11,16 +11,16 @@ class PostsContainer extends Component {
     fetch('http://localhost:8080/api/posts')
       .then(res => res.json())
       .then(posts => {
-        // console.log(posts);
+        console.log(posts);
         this.setState({ posts })
       })
       .catch(err => console.log(err));
   }
 
   render(){
-    console.log("render state = ", this.state.posts)
     const result = this.state.posts
-    ? this.state.posts.map(post => {
+    ? this.state.posts.filter(post => {
+        posts.length -3, 1;
       return (
         <div key={post.id}>
           <div className="card mb-4 box-shadow">
@@ -45,8 +45,7 @@ class PostsContainer extends Component {
     })
     : <h3>Loading...</h3>
     return (
-        <div className="PostsContainer">
-            <Header />
+        <div className="HomeDealsContainer">
             <div className="row">
               <div className="container">
                 <div className="card-deck mb-3">
@@ -59,4 +58,4 @@ class PostsContainer extends Component {
   }
 }
 
-export default PostsContainer
+export default HomeDealsContainer

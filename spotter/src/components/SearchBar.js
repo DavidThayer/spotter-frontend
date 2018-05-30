@@ -4,7 +4,10 @@ import '../index.css'
 class SearchBar extends Component {
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {
+          value: '',
+        //   toResults: false,
+        };
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,12 +19,17 @@ class SearchBar extends Component {
     }
   
     handleSubmit(event) {
-      console.log('Searching for: ' + this.state.value);
-      event.preventDefault();
+        event.preventDefault();
+        console.log('Searching for: ' + this.state.value);
+        // fetch get
+        // setstate to toResults: True
     }
   
     
     render() {
+        // if (this.state.toResults === true) {
+        //     return <Redirect to='/deals/' + this.state.value />
+        // }
       return (
         <form onSubmit={this.handleSubmit} className="hero-input form-inline my-2 my-lg-0">
           <label>
