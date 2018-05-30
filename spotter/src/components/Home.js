@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import '../index.css'
 // import PostsContainer from '../containers/PostsContainer';
 import SearchBar from './SearchBar';
@@ -32,4 +32,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);

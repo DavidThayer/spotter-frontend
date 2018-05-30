@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import '../index.css'
 
 class SearchBar extends Component {
@@ -7,6 +8,7 @@ class SearchBar extends Component {
       this.state = {
           value: '',
         //   toResults: false,
+          myRedirect: false,
         };
   
       this.handleChange = this.handleChange.bind(this);
@@ -18,25 +20,23 @@ class SearchBar extends Component {
       console.log(this.state.value)
     }
   
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault();
         console.log('Searching for: ' + this.state.value);
         fetch(`http://localhost:8080/api/posts?q=${this.state.value}`)
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(myJson) {
-                console.log(myJson);
-            });
-        // fetch get
+            .then(response => response.json())
+            .then(myJson => console.log(myJson))
+            .then(this.setState({myRedirect: true}))
+            .catch(err => console.log(err));
         // setstate to toResults: True
+        
     }
   
     
     render() {
-        // if (this.state.toResults === true) {
-        //     return <Redirect to='/deals/' + this.state.value />
-        // }
+        if (this.state.myRedirect === true) {
+            return <Redirect to={{pathname: '/results/', state: this.state.value}} />
+        }
       return (
         <form onSubmit={this.handleSubmit} className="hero-input form-inline my-2 my-lg-0">
           <label>
@@ -48,4 +48,4 @@ class SearchBar extends Component {
     }
   }
 
-export default SearchBar  
+export default SearchBar
