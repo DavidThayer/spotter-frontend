@@ -21,6 +21,13 @@ class SearchBar extends Component {
     handleSubmit(event) {
         event.preventDefault();
         console.log('Searching for: ' + this.state.value);
+        fetch(`http://localhost:8080/api/posts?q=${this.state.value}`)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+                console.log(myJson);
+            });
         // fetch get
         // setstate to toResults: True
     }

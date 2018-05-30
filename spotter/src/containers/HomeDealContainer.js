@@ -15,12 +15,20 @@ class HomeDealsContainer extends Component {
         this.setState({ posts })
       })
       .catch(err => console.log(err));
+
+
   }
 
   render(){
+
+
     const result = this.state.posts
-    ? this.state.posts.filter(post => {
-        posts.length -3, 1;
+    ? this.state.posts
+        .sort((a, b) => a.created_at < b.created_at)
+        .slice(0, 3)
+        .map((post, idx) => {
+        console.log(idx, post)
+    
       return (
         <div key={post.id}>
           <div className="card mb-4 box-shadow">
