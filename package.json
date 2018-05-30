@@ -9,6 +9,7 @@
   "author": "David Thayer",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.1",
+    "npm": "^6.1.0"
   }
 }

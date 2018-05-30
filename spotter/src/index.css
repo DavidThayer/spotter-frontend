@@ -22,8 +22,12 @@ html {
   max-width: 700px;
 }
 
-.card-deck .card {
+.card-deck {
   min-width: 220px;
+}
+.card {
+  min-width: 220px;
+  width: 18rem;
 }
 
 
@@ -35,9 +39,9 @@ html {
 
 /* Begin jumbotron css */
 h1 {
-  color: #ffffff !important;
-  font-weight: 44px !important;
-  text-shadow: 1px 1px 40px rgba(22, 23, 31, 0.4) !important;
+  color: #ffffff;
+  font-weight: 44px;
+  text-shadow: 1px 1px 40px rgba(22, 23, 31, 0.4);
   line-height: 1.1;
   text-rendering: optimizelegibility;
 }
@@ -51,39 +55,38 @@ h1 {
 }
 
 .hero-form {
-  font-size: 19px !important;
-  line-height: 24px !important;
+  font-size: 19px;
+  line-height: 24px;
   color: #484848;
   -moz-osx-font-smoothing: grayscale;
-  border: 0px !important;
-  border-radius: 4px !important;
-  cursor: pointer !important;
-  display: inline !important;
-  height: 48px !important;
-  text-align: left !important;
-  padding: 7px 8px !important;
-  position: relative !important;
-  width: 75% !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  outline: none !important;
+  border: 0px;
+  border-radius: 4px;
+  display: inline;
+  height: 48px;
+  text-align: left;
+  padding: 7px 8px;
+  position: relative;
+  width: 350px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
 }
 
 .hero-button {
-  font-size: 19px !important;
-  line-height: 24px !important;
-  height: 48px !important;
-  border-radius: 4px !important;
-  padding: 7px 8px !important;
+  font-size: 19px;
+  line-height: 24px;
+  height: 48px;
+  border-radius: 4px;
+  padding: 7px 8px;
 }
 .hero-container {
-  /* z-index: 1 !important; */
-  /* position: relative !important; */
-  height: 300px !important;
-  top: 50% !important;
-  width: 100% !important;
-  margin: 0 auto !important;
+  /* z-index: 1; */
+  /* position: relative; */
+  height: 300px;
+  top: 50%;
+  width: 100%;
+  margin: 0 auto;
 }
 .main-image {
   background-image: url("./img/model-s-lg.jpg");
@@ -91,6 +94,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.img-size {
+  height: 180px;
 }
 
 /* End jumbotron css */
