@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Header from '../components/Header'
 
 class HomeDealsContainer extends Component {
 
@@ -30,7 +29,7 @@ class HomeDealsContainer extends Component {
         console.log(idx, post)
     
       return (
-        <div key={post.id}>
+        <div key={post._id}>
           <div className="card mb-4 box-shadow">
             <div className="card-body card-size">
               <img src={post.image} className="img-fluid img-size" alt="car"/>
