@@ -5,7 +5,7 @@ import './index.css';
 import Home from './components/Home';
 import PostsContainer from './containers/PostsContainer';
 import Footer from './components/Footer';
-import Test from './components/Test';
+import Result from './components/Result';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Switch>
             <Route exact path='/' component={ Home }/>
-            <Route exact path='/results' component={ Test }/>
+            <Route exact path='/results' component={ Result }/>
             <Route path='/deals' component={ PostsContainer }/>
         </Switch>
         <Footer />

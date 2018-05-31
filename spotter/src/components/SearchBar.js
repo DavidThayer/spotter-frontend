@@ -26,9 +26,8 @@ class SearchBar extends Component {
         fetch(`http://localhost:8080/api/posts?q=${this.state.value}`)
             .then(response => response.json())
             .then(myJson => console.log(myJson))
-            .then(this.setState({myRedirect: true}))
+            .then(this.setState({myRedirect: true})) //can I do this only if there is a result for the search?
             .catch(err => console.log(err));
-        // setstate to toResults: True
         
     }
   
@@ -40,7 +39,7 @@ class SearchBar extends Component {
       return (
         <form onSubmit={this.handleSubmit} className="hero-input form-inline my-2 my-lg-0">
           <label>
-            <input type="text" className="form-control mr-sm-2 hero-form" placeholder="Search make or model. Try 'Nissan'" value={this.state.value} onChange={this.handleChange} aria-label="Search"/>
+            <input type="text" className="form-control mr-sm-2 hero-form" placeholder="Search make or model. Try 'Tesla'" value={this.state.value} onChange={this.handleChange} aria-label="Search"/>
           </label>
           <input className="btn btn-lg btn-primary my-2 my-sm-0 hero-button" type="submit" value="Submit" />
         </form>
