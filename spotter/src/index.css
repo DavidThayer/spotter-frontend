@@ -29,7 +29,13 @@ html {
   min-width: 220px;
   width: 18rem;
 }
+.card-clip-div {
+  overflow: hidden;
+}
 
+.nounderline {
+  text-decoration: none;
+}
 
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
@@ -98,6 +104,10 @@ h1 {
 
 .img-size {
   height: 180px;
+  
+}
+.left-align {
+  text-align: left;
 }
 
 /* End jumbotron css */

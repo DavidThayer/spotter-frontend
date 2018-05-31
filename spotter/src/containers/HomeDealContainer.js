@@ -32,19 +32,21 @@ class HomeDealsContainer extends Component {
         <div key={post._id}>
           <div className="card mb-4 box-shadow">
             <div className="card-body card-size">
-              <img src={post.image} className="img-fluid img-size" alt="car"/>
+            <div className="card-clip-div">
+              <img src={post.image} className="img-responsive img-size" alt="car"/>
               <p><small>New {post.year} {post.make}</small></p>
               <h3 className="card-title pricing-card-title">{post.model}</h3>
               <h3 className="card-title pricing-card-title">${post.lease_price} <small className="text-muted">/ mo</small></h3>
               <ul className="list-unstyled mt-3 mb-4">
-              <li>{post.trim}</li>
+              {/* <li>{post.trim}</li> */}
               <li>{post.lease_term} month lease</li>
               <li>${post.due_at_sign} due at signing</li>
               <li>{post.dealership}</li>
               <li>Expires {post.expiration_date}</li>
               </ul>
-              <button type="button" className="btn btn-lg btn-block btn-primary">details</button>
-              
+              <a class="btn btn-lg btn-block btn-primary" href={post.website} role="button">View Deal</a>
+              {/* <button type="button" className="btn btn-lg btn-block btn-primary">details</button> */}
+              </div>
               </div>
             </div>
         </div>

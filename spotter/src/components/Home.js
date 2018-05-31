@@ -12,7 +12,7 @@ class Home extends Component {
         <div className="jumbotron jumbotron-fluid main-image">
             <div className="hero-container">
                 <div className="container text-left">
-                    <h1>Find your dream car<br />
+                    <h1>Find the car you want<br />
                         for a price you won't believe.
                     </h1>
                     <SearchBar />
