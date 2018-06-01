@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* pricing css */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck {
+  min-width: 220px;
+}
+.card {
+  min-width: 220px;
+  width: 18rem;
+}
+.card-clip-div {
+  overflow: hidden;
+}
+
+.nounderline {
+  text-decoration: none;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/* End of pricing css */
+
+/* Begin jumbotron css */
+h1 {
+  color: #ffffff;
+  font-weight: 44px;
+  text-shadow: 1px 1px 40px rgba(22, 23, 31, 0.4);
+  line-height: 1.1;
+  text-rendering: optimizelegibility;
+}
+
+.jumbotron {
+  padding: 15% 10% 10% 10%;
+}
+
+.hero-input {
+  margin-top: 1.3rem;
+}
+
+.hero-form {
+  font-size: 19px;
+  line-height: 24px;
+  color: #484848;
+  -moz-osx-font-smoothing: grayscale;
+  border: 0px;
+  border-radius: 4px;
+  display: inline;
+  height: 48px;
+  text-align: left;
+  padding: 7px 8px;
+  position: relative;
+  width: 350px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
+}
+
+.hero-button {
+  font-size: 19px;
+  line-height: 24px;
+  height: 48px;
+  border-radius: 4px;
+  padding: 7px 8px;
+}
+.hero-container {
+  /* z-index: 1; */
+  /* position: relative; */
+  height: 300px;
+  top: 50%;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-image {
+  background-image: url("./img/model-s-lg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.img-size {
+  height: 180px;
+  
+}
+.left-align {
+  text-align: left;
+}
+
+/* End jumbotron css */
