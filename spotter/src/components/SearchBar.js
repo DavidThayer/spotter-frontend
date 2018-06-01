@@ -23,7 +23,8 @@ class SearchBar extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         console.log('Searching for: ' + this.state.value);
-        fetch(`http://localhost:8080/api/posts?q=${this.state.value}`)
+        // fetch(`http://localhost:8080/api/posts?q=${this.state.value}`)
+        fetch(`https://tryspotter-backend.herokuapp.com/api/posts?q=${this.state.value}`)
             .then(response => response.json())
             .then(myJson => console.log(myJson))
             .then(this.setState({myRedirect: true})) //can I do this only if there is a result for the search?

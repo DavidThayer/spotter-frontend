@@ -7,7 +7,8 @@ class HomeDealsContainer extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8080/api/posts')
+    // fetch('http://localhost:8080/api/posts')
+   fetch('https://tryspotter-backend.herokuapp.com/api/posts')
       .then(res => res.json())
       .then(posts => {
         console.log(posts);

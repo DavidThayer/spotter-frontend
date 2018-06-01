@@ -10,7 +10,8 @@ class Result extends Component {
         // this.setState({
         //     value: this.props.history.location.state
         // })
-        fetch(`http://localhost:8080/api/posts?q=${this.props.history.location.state}`)
+        // fetch(`http://localhost:8080/api/posts?q=${this.props.history.location.state}`)
+        fetch(`https://tryspotter-backend.herokuapp.com/api/posts?q=${this.props.history.location.state}`)
             .then(response => response.json())
             // .then(myJson => console.log("API RESULT", myJson[0]))
             .then(myJson => {
